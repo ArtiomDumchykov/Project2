@@ -4,6 +4,7 @@ body {
 }
 
 @media (max-width: 900px) {
+    /* comment */
     body {
         background-color: blueviolet;
     }
