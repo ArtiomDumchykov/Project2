@@ -19,10 +19,64 @@
         git remote add origin https://github.com/ArtiomDumchykov/Project1.git
         git push -u origin master
         git push
+
         git pull
     </p>
+
     <p>
-        <span>text</span>
+        git checkout . отмена всего
+        git checkout -- index.html отмена
+        git reset .
+        git reset index.html отменить уже добавленный
+        git co -- index.html
+
+        если сделали commit
+        git reset --hard HEAD^1 вернуться на 1
+
+        git reset --soft HEAD^1 но останеться содержимое 
+        git reset
+        git checkout .
     </p>
+    <div>
+        работа с ветками
+        git br -показывает текущую ветку 
+        git br -показывает текущую ветку и последний commit 
+        git branch name    создание новой ветки 
+        git branch dev    создание новой ветки 
+        git co dev - переход на другую ветку 
+        git co -b name
+        git co -b dev2 создает сразу ветку и переодит в нее
+        git br -m name
+        git br -m myFix изменить имя текущей ветки
+
+        git co d7be54b имя коммита 
+        создать новую ветку с этого комита 
+        git co -b name 
+
+        git push --set-upstream origin new_branch создать новую ветку на git hub
+
+        git br -d name удаление ветки
+    </div>
+    <div>
+        GIST 
+        https://github.com/settings/tokens 
+
+        generate token 
+        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
+        выделить f1 select fike ....com
+
+        
+    </div>
+    <div>
+        <pre>
+            [alias]
+	            s = status 
+	            cm = commit -m
+	            l = log --oneline --graph --decorate --all
+	            g = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'
+	            br = branch
+	            co = checkout
+        </pre>
+    </div>
 </body>
 </html>
